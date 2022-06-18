@@ -1,0 +1,693 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p
+{
+    font-weight: 300;
+    color: #111;
+}
+
+
+
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(FOTO/bg.jpg);
+    background-size: cover;
+}
+
+.banner .content
+{
+    width: 1200px;
+    text-align: left;
+}
+
+.banner .content h2
+{
+    font-size: 4em;
+    color: #fff;
+}
+
+.banner .content p
+{
+    font-size: 3em;
+    color: #E49700;
+    font-family: -apple-system, BlinkMacSystemFont;
+}
+
+.banner .content p2
+{
+    font-size: 1em;
+    color: #fff;
+}
+
+.button
+{
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    background: #FFB526;
+    display: inline-block;
+    padding: 8px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+
+.button:hover
+{
+    letter-spacing: 6px;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky
+{
+    background: #FFB526;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba (0,0,0,0.05);
+
+}
+
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+
+
+header .logo span
+{
+    color: #E49700;
+}
+
+header .navigation
+{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li
+{
+    list-style: none;
+    margin-left: 40px;
+}
+
+header .navigation li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: .2rem;
+    padding: .2rem 1rem;
+}
+
+header .navigation li a:hover
+{
+    color: #fff;
+    background-color: #E49700;
+    border-radius: 8px;
+}
+
+section
+{
+    padding: 100px;
+
+}
+
+.row
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tittle
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row .col50
+{
+    position: relative;
+    width: 48%;
+}
+
+.tittleText
+{
+    color: #111;
+    font-size: 3rem;
+    /*font-weight: 300;*/
+    padding: 1rem;
+}
+
+.tittleText .hr
+{
+    border-top: 3px solid #FFB526;
+}
+
+.tittleText span
+{
+    color: #E49700;
+    /*font-weight: 700;
+    font-size: 1.5em;*/
+
+}
+
+.row .col50 .imgBx
+{
+    position: relative;
+    width: 100%;
+    /*min-height: 300px;*/
+    height: 100%;
+}
+
+.row .col50 .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.about .row .col50 p
+{
+    text-align: justify;
+}
+
+
+
+
+
+
+/*menu .tittle .tittleText 
+{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 .5rem;
+    padding-top: 6rem;
+    box-shadow: 0 .2rem .01rem rgba(0,0,0,.3);
+} 
+
+.menu .tittle .tittleText span
+{
+    display: inline-block;
+    font-size: 3.5rem;
+    color: var(--red);
+    padding: 1rem 0;
+    box-shadow: 0 .2rem .05rem var(--red);
+}*/
+
+
+.menu .content
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.menu .content .box
+{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+}
+
+.menu .content .box .imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .content .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.menu .content .box .text
+{
+    padding: 12px 0 5px;
+    text-align: center;
+}
+
+.menu .content .box .text .stars i
+{
+    color:gold;
+    font-size: 1em;
+    padding:1em .1em;
+}
+
+.menu .content .box .text p
+{
+    font-weight: 300;
+}
+
+.order .row
+{
+    padding: 2rem;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.order .row .image
+{
+    flex: 1 1 20rem;
+}
+
+.order .row .image img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.order .row form
+{
+    flex: 1 1 30rem;
+    padding: 1rem;
+}
+
+.order .row form .inputBox input, 
+.order .row form textarea,
+.order .row .inputBox select
+{
+    padding: .3rem;
+    margin: .5rem 0;
+    font-size: 1rem;
+    color: #333;
+    text-transform: none;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    border-radius: .3rem;
+    width: 49%;
+}
+
+.order .row .inputBox select
+{
+    width: 100%;
+    resize: none;
+}
+
+.order .row form textarea
+{
+    width: 100%;
+    resize: none;
+    height: 15rem;
+}
+
+.contact
+{
+    background: url(FOTO/tomat.jpg);
+    background-size: cover;
+}
+
+.contactform
+{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+.contactform h3
+{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contactform .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactform .inputBox input,
+.contactform .inputBox textarea
+{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #333;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+    border-radius: .3rem;
+}
+
+.contactform .inputBox input[type="submit"]
+{
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    background: #FFB526;
+    display: inline-block;
+    padding: 8px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.copyright
+{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.copyright p
+{
+    color: #333;
+}
+
+.copyright a
+{
+    color: #FFB526;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+/*.footer
+{
+    background: #FFB526;
+    text-align: center;
+}
+
+.footer .share
+{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .credit
+{
+    padding: 2.5rem 1rem;
+    color: #fff;
+    font-weight: normal;
+    font-size: 2rem;
+}*/
+
+
+@media(max-width:991px)
+{
+    header,
+    header.sticky
+    {
+        padding: 10px 20px;
+    }
+
+    header .navigation
+    {
+        display: none;
+    }
+
+    header .navigation.active
+    {
+        width: 100%;
+        height: calc(100% - 60px);
+        position: fixed;
+        top: 60px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    header .navigation li 
+    {
+        margin-left: 0;
+    }
+
+    header .navigation li a
+    {
+        color: #111;
+        font-size: 2em;
+    }
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(FOTO/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .menuToggle.active
+    {
+        background: url(FOTO/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    html 
+    {
+        font-size: 50%;
+    }
+
+    .order .row form .inputBox input
+    {
+        width: 100%;
+    }
+
+    section 
+    {
+        padding: 20px;
+    }
+
+    .banner .content h2 
+    {
+        font-size: 4em;
+        color: #fff;
+    }
+
+    .row
+    {
+        flex-direction: column;
+    }
+
+    .row .col50
+    {
+        position: relative;
+        width: 100%;
+
+    }
+
+    .row .col50 .imgBx
+    {
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .menu .content
+    {
+        margin-top: 20px;
+    }
+
+    .menu .content .box
+    {
+        margin: 10px;
+    }
+    .menu .content .box .imgBx
+    {
+        height: 260px;
+    }
+
+    .tittle
+    {
+        text-align: center;
+    }
+
+    .tittleText
+    {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+
+    .contactform 
+    {
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .banner .content h2
+    {
+        font-size: 2.2em;
+        color: #fff;
+    }
+}
+/*.order .content
+{
+    padding: 1.2rem;
+    box-shadow: 0 .2rem .2rem rgba(0, 0, 0, .1);
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border-radius: 15px;
+}
+
+.order .content .box .imgBx
+{
+    flex: 0 0 30rem;
+}
+
+.order .content .box .imgBx img
+{
+    width: 250px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.order .content form
+{
+    flex: 1 1 50rem;
+    padding: 1rem;
+}
+
+.order .content form .inputBox
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.order .content form .inputBox input
+{
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    width: 49%;
+}
+
+/*.order .content form .inputBox .input input,
+.order .content form .inputBox .input textarea
+{
+    background: #eee;
+    border-radius: .3rem;
+    padding: .3rem;
+    font-size: 0.8rem;
+    color: var(--black);
+    text-transform: none;
+    margin-bottom: .6rem;
+    width: 650px;
+}*/
+
+/*.order .content form .inputBox .input textarea
+{
+    width: 100%;
+    resize: none;
+    height: 15rem;
+}
+/*.login form label
+{
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.login input
+{
+    width: 100%;
+    margin: 5px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}*/
+
+
+/*button
+{
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 252px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}*/
